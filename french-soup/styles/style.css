@@ -1,9 +1,55 @@
-/*Some necessary adjustments*/
-h1, body, html, main {
-  margin: 0;
-}
-/*Import the font and set the default size*/
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700,400,500");
+
 html {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px
+  margin: 0px;
+  padding: 0px;
+  font-size: 30px;
+  font-family: roboto;
+  line-height: 38px;
+  font-weight: 100;
+}
+
+.header {
+  background-image: url(/french-soup/images/soup.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  padding: 300px 0;
+  font-size: 72px;
+  margin: 0;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.recipe {
+  margin: 90px;
+}
+
+.centerImages {
+  text-align: center;
+}
+
+.ingredientsList {
+  list-style: "- ";
+}
+
+
+.directionsList>li::before {
+  content: counter(listcounter)")";
+}
+
+.directionsList>li {
+  counter-increment: listcounter;
+}
+
+.directionsList {
+  list-style: none;
 }
